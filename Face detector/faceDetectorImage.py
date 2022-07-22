@@ -3,7 +3,7 @@ from random import randrange
 
 trainedFaceData = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-img = cv2.imread('grpPeople.jpg')
+img = cv2.imread('Me.jpg')
 img = cv2.resize(img,(900,600))
 
 
