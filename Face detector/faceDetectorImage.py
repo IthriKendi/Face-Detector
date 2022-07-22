@@ -6,6 +6,7 @@ trainedFaceData = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 img = cv2.imread('grpPeople.jpg')
 img = cv2.resize(img,(900,600))
 
+
 greyScaledImg = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 faceCoordinates = trainedFaceData.detectMultiScale(greyScaledImg)
@@ -17,3 +18,5 @@ cv2.imshow('Face Detector', img)
 cv2.waitKey()
 
 print('Code Completed!')
+
+# this is for the emergency fix     
